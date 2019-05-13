@@ -3,6 +3,7 @@
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 .b-1::before {
 	content: '';
@@ -107,6 +108,13 @@
 }
 .b-2 .desc p a {
 	color: #88bc40;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2 .desc p a:hover {
+	color: rgb(116, 168, 44);
 }
 .b-2-list {
 	margin-bottom: 15px;
@@ -159,6 +167,9 @@
 	}
 }
 @media screen and (max-width: 767px){
+	.b-1 {
+		background-attachment: scroll;
+	}
 	.b-1 .container {
 		padding-top: 50px;
 		padding-bottom: 50px;

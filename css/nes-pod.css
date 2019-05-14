@@ -167,6 +167,9 @@
 	background-color: #88bc40;
 	color: #ffffff;
 }
+.b-3-wrap .material-list li.active a.tree {
+	background-color: #8a6642;
+}
 .b-3-wrap .text-block .text {
 	display: none;
 }
@@ -189,6 +192,16 @@
 	background-color: transparent;
 	color: #88bc40;
 }
+.b-3-wrap .text-block .text p a {
+	color: rgb(131, 188, 64);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-3-wrap .text-block .text p a:hover {
+	color: rgb(111, 168, 44);
+}
 .b-3-wrap .text-block .preim-title {
 	display: block;
 	text-align: left;
@@ -207,6 +220,16 @@
 	font-size: 18px;
 	color: #000000;
 	margin-bottom: 5px;
+}
+.b-3-wrap .text-block .preim-list li a {
+	color: rgb(131, 188, 64);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-3-wrap .text-block .preim-list li a:hover {
+	color: rgb(111, 168, 44);
 }
 .b-3-wrap .text-block .preim-list li:last-child {
 	margin-bottom: 0;
@@ -370,16 +393,16 @@
 	background-color: #88bc40;
 	color: #ffffff;
 }
-.b-5 .item .texts {
-	display: block;
+.b-5 .item .text {
+	display: none;
 	width: 100%;
 	box-sizing: border-box;
 	padding: 30px;
 	border-radius: 5px;
 	background-color: rgb(234, 245, 218);
 }
-.b-5 .item .text {
-	display: none;
+.b-5 .item .text.fon-2 {
+	background-color: rgb(211, 110, 112);
 }
 .b-5 .item .text.active {
 	display: block;

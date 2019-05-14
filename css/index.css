@@ -40,6 +40,43 @@
 	padding-top: 30px;
 	padding-bottom: 90px;
 }
+.b-2 .mobile-filter-btn {
+	display: none;
+	position: relative;
+	padding-right: 15px;
+	font-size: 16px;
+	font-family: "Open Sans";
+	color: #000000;
+	font-weight: bold;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.b-2 .mobile-filter-btn:hover {
+	cursor: pointer;
+}
+.b-2 .mobile-filter-btn::before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border: 0;
+	border-top: 5px solid #000000;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	position: absolute;
+	right: 0;
+	top: calc(50% - 2.5px);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2 .mobile-filter-btn.active::before {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
 .b-2 .filter {
 	display: flex;
 	display: -webkit-flex;
@@ -251,8 +288,20 @@
 	.b-1 h1 {
 		font-size: 36px;
 	}
+	.b-2 .mobile-filter-btn {
+		display: inline-block;
+	}
 	.b-2 .filter {
 		display: block;
+		max-height: 0;
+		overflow: hidden;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-ms-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+	.b-2 .filter.active {
+		max-height: 500px;
 	}
 	.b-2 .filter li {
 		width: 100%;

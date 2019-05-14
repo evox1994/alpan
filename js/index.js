@@ -8,4 +8,9 @@ $(document).ready(function(){
 		return false;
 	});
 
+	$('body').on('click','.mobile-filter-btn',function(){
+		$(this).toggleClass('active');
+		$(this).parents('.container').find('.filter').toggleClass('active');
+	});
+
 });

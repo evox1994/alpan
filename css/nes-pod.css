@@ -120,6 +120,15 @@
 	box-sizing: border-box;
 	width: 100%;
 }
+.b-3-images {
+	width: calc(50% - 15px);
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+}
 .b-3-img {
 	display: block;
 	max-width: calc(50% - 15px);
@@ -262,8 +271,96 @@
 }
 .b-4-img {
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto 30px;
 	max-width: 100%;
+}
+.b-4 .switch-list {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content: center;
+	align-items: stretch;
+	box-sizing: border-box;
+	width: 100%;
+}
+.b-4 .switch-list li {
+	overflow: hidden;
+	width: 125px;
+}
+.b-4 .switch-list li a {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	overflow: hidden;
+	padding: 13px 10px;
+	text-align: center;
+	background-color: rgb(235, 235, 235);
+	font-family: 'Open Sans';
+	font-size: 14px;
+	color: #000000;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-4 .switch-list li:first-child a {
+	border-radius: 5px 0 0 5px;
+}
+.b-4 .switch-list li:last-child a {
+	border-radius: 0 5px 5px 0;
+}
+.b-4 .switch-list li.active a {
+	background-color: #88bc40;
+	color: #ffffff;
+}
+.b-4 .switch-list li.active a.tree {
+	background-color: #8a6642;
+}
+
+.b-4-1 {
+	background-color: #f0f0f0;
+}
+.b-4-1 .container {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.b-4-1 .wrapper {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	width: 100%;
+}
+.b-4-1 .title {
+	width: calc(100% - 380px);
+	font-size: 32px;
+	font-family: 'Open Sans';
+	color: rgb(70, 69, 69);
+	font-weight: 600;
+	text-align: left;
+}
+.b-4-1 .title span {
+	color: #88bc40;
+}
+.b-4-btn {
+	display: block;
+	max-width: 350px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	background-color: #88bc40;
+	color: #ffffff;
+	font-size: 18px;
+	font-family: 'Open Sans';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-4-btn:hover {
+	background-color: #77ab30;
 }
 
 .b-5 .container {
@@ -520,6 +617,17 @@
 	}
 	.b-3-wrap .text-block {
 		width: 100%;
+	}
+	.b-4-1 .wrapper {
+		display: block;
+	}
+	.b-4-1 .title {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.b-4-btn {
+		margin: 0 auto;
 	}
 	.b-5 .item {
 		flex-wrap: wrap;

@@ -334,8 +334,8 @@
 	width: 100%;
 }
 .b-4-1 .title {
-	width: calc(100% - 380px);
-	font-size: 32px;
+	width: calc(100% - 420px);
+	font-size: 35px;
 	font-family: 'Open Sans';
 	color: rgb(70, 69, 69);
 	font-weight: 600;
@@ -584,7 +584,11 @@
 
 
 
-
+@media screen and (max-width: 1280px){
+	.b-4-1 .title {
+		width: calc(100% - 380px);
+	}
+}
 @media screen and (max-width: 767px){
 	.b-1 h1 {
 		width: 100%;

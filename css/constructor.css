@@ -1,0 +1,25 @@
+.constructor-block {
+	padding: 50px 0;
+}
+.constructor-image {
+	position: relative;
+	margin-bottom: 30px;
+}
+.constructor-image img {
+	display: block;
+	max-width: 100%;
+}
+.constructor-image .swap-img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.constructor-filter {
+	margin-bottom: 20px;
+}
+.constructor-filter:last-child {
+	margin-bottom: 0;
+}
+.constructor-filter .name {
+	margin-bottom: 15px;
+}

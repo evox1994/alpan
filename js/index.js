@@ -13,4 +13,9 @@ $(document).ready(function(){
 		$(this).parents('.container').find('.filter').toggleClass('active');
 	});
 
+	$('.fancybox-banner').fancybox({touch: false});
+	setTimeout(function(){
+		$('.fancybox-banner').click();
+	},100);
+
 });

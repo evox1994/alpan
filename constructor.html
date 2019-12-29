@@ -26,34 +26,119 @@
 
 	<div class="b constructor-block">
 		<div class="container">
-			<div class="constructor-image">
-				<img src="i/const-fon.jpg" alt="">
-				<img src="i/" alt="" class="swap-img swap-1">
-				<img src="i/" alt="" class="swap-img swap-2">
-				<img src="i/" alt="" class="swap-img swap-3">
-			</div>
-			<div class="constructor-filters">
-				<div class="constructor-filter">
-					<div class="name">Выберите стену</div>
-					<div class="items">
-						<a href="i/wall-1.png" data-img=".swap-1" class="swap-a">Стена-1</a><br>
-						<a href="i/wall-2.png" data-img=".swap-1" class="swap-a">Стена-2</a>
+			<div class="constructor">
+				<div class="constructor-left">
+					<div class="constructor-left-title">Фильтры</div>
+					<div class="item-wrap">
+						<div class="item-wrap-title">Выберите элемент дома</div>
+						<ul class="constructor-elements">
+							<li data-el="#roof" data-img="roof" data-pic=".swap-1">Крыша</li>
+							<li data-el="#wall" data-img="wall" data-pic=".swap-2">Стена</li>
+							<li data-el="#cap" data-img="cap" data-pic=".swap-3">Цоколь</li>
+							<li data-el="#fas-el" data-img="fas" data-pic=".swap-4">Фасонные эелементы</li>
+							<li data-el="#goal" data-img="goal" data-pic=".swap-5">Гаражные ворота</li>
+						</ul>
+					</div>
+					<div class="constructor-item" id="roof">
+						<div class="item-wrap">
+							<div class="item-wrap-title">Цвета:</div>
+							<ul class="constructor-colors">
+								<li class="active" data-img="darkgray" style="background-color:#222328;border-color:#222328;"></li>
+								<li data-img="pimp" style="background-color:#f91155;border-color:#f91155;"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="constructor-item" id="wall">
+						<div class="item-wrap">
+							<div class="item-wrap-title">Текстура:</div>
+							<ul class="constructor-texture">
+								<li data-img="tsht" data-texture=".texture-1"><div></div><span>"Тонкая" штукатурка</span></li>
+								<li data-img="zsht" data-texture=".texture-2"><div></div><span>"Зернистая" штукатурка</span></li>
+								<li class="active" data-img="dsht" data-texture=".texture-3"><div></div><span>Декоративная штукатурка</span></li>
+								<li data-img="tree" data-texture=".texture-4"><div></div><span>Дерево</span></li>
+							</ul>
+						</div>
+						<div class="item-wrap">
+							<div class="item-wrap-title">Цвета:</div>
+							<ul class="constructor-colors texture-colors texture-1">
+								<li class="active" data-img="white" style="background-color:#cfcfb5;border-color:#cfcfb5;"></li>
+								<li data-img="yellow" style="background-color:#f9f612;border-color:#f9f612;"></li>
+							</ul>
+							<ul class="constructor-colors texture-colors texture-2">
+								<li class="active" data-img="white" style="background-color:#c8c8ae;border-color:#c8c8ae;"></li>
+								<li data-img="blue" style="background-color:#19d7fc;border-color:#19d7fc;"></li>
+							</ul>
+							<ul class="constructor-colors texture-colors texture-3 active">
+								<li class="active" data-img="white" style="background-color:#c4c4aa;border-color:#c4c4aa;"></li>
+								<li data-img="pimp" style="background-color:#f91155;border-color:#f91155;"></li>
+							</ul>
+							<ul class="constructor-colors texture-colors texture-4">
+								<li class="active" data-img="white" style="background-color:#bebea6;border-color:#bebea6;"></li>
+								<li data-img="red" style="background-color:#ff0000;border-color:#ff0000;"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="constructor-item" id="cap">
+						<div class="item-wrap">
+							<div class="item-wrap-title">Текстура:</div>
+							<ul class="constructor-texture">
+								<li data-img="tsht" data-texture=".texture-1"><div></div><span>"Тонкая" штукатурка</span></li>
+								<li class="active" data-img="zsht" data-texture=".texture-2"><div></div><span>"Зернистая" штукатурка</span></li>
+								<li data-img="dsht" data-texture=".texture-3"><div></div><span>Декоративная штукатурка</span></li>
+								<li data-img="tree" data-texture=".texture-4"><div></div><span>Дерево</span></li>
+							</ul>
+						</div>
+						<div class="item-wrap">
+							<div class="item-wrap-title">Цвета:</div>
+							<ul class="constructor-colors texture-colors texture-1">
+								<li class="active" data-img="brown" style="background-color:#130d0d;border-color:#130d0d;"></li>
+								<li data-img="blue" style="background-color:#19d7fc;border-color:#19d7fc;"></li>
+							</ul>
+							<ul class="constructor-colors texture-colors texture-2 active">
+								<li class="active" data-img="brown" style="background-color:#271c18;border-color:#271c18;"></li>
+								<li data-img="red" style="background-color:#ff0000;border-color:#ff0000;"></li>
+							</ul>
+							<ul class="constructor-colors texture-colors texture-3">
+								<li class="active" data-img="brown" style="background-color:#31241e;border-color:#31241e;"></li>
+								<li data-img="yellow" style="background-color:#f9f612;border-color:#f9f612;"></li>
+							</ul>
+							<ul class="constructor-colors texture-colors texture-4">
+								<li class="active" data-img="brown" style="background-color:#140f0c;border-color:#140f0c;"></li>
+								<li data-img="pimp" style="background-color:#f91155;border-color:#f91155;"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="constructor-item" id="fas-el">
+						<div class="item-wrap">
+							<div class="item-wrap-title">Цвета:</div>
+							<ul class="constructor-colors">
+								<li class="active" data-img="brown" style="background-color:#2b3537;border-color:#2b3537;"></li>
+								<li data-img="blue" style="background-color:#19d7fc;border-color:#19d7fc;"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="constructor-item" id="goal">
+						<div class="item-wrap">
+							<div class="item-wrap-title">Цвета:</div>
+							<ul class="constructor-colors">
+								<li class="active" data-img="brown" style="background-color:#584942;border-color:#584942;"></li>
+								<li data-img="pimp" style="background-color:#f91155;border-color:#f91155;"></li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="constructor-filter">
-					<div class="name">Выберите крышу</div>
-					<div class="items">
-						<a href="i/roof-1.png" data-img=".swap-2" class="swap-a">Крыша-1</a><br>
-						<a href="i/roof-2.png" data-img=".swap-2" class="swap-a">Крыша-2</a>
+				<div class="constructor-right">
+					<div class="constructor-image">
+						<img src="i/const-base.jpg" alt="">
+						<img src="" alt="" class="swap-img swap-1">
+						<img src="" alt="" class="swap-img swap-2">
+						<img src="" alt="" class="swap-img swap-3">
+						<img src="" alt="" class="swap-img swap-4">
+						<img src="" alt="" class="swap-img swap-5">
 					</div>
+					<!--<a href="#" class="constructor-btn">Отправить визуализацию на расчёт</a>-->
 				</div>
-				<div class="constructor-filter">
-					<div class="name">Выберите цоколь</div>
-					<div class="items">
-						<a href="i/cap-1.png" data-img=".swap-3" class="swap-a">Цоколь-1</a><br>
-						<a href="i/cap-2.png" data-img=".swap-3" class="swap-a">Цоколь-2</a>
-					</div>
-				</div>
+				<!--<a href="#" class="constructor-btn">Отправить визуализацию на расчёт</a>-->
 			</div>
 		</div>
 	</div>

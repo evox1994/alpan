@@ -27,16 +27,21 @@
 	<div class="b constructor-block">
 		<div class="container">
 			<div class="constructor">
+				<div class="constructor-filter-btn">Фильтры</div>
 				<div class="constructor-left">
+					<div class="constructor-left-buttons">
+						<div class="constructor-left-btn">Показать результат</div>
+					</div>
 					<div class="constructor-left-title">Фильтры</div>
 					<div class="item-wrap">
 						<div class="item-wrap-title">Выберите элемент дома</div>
+						<img src="i/house.png" alt="" class="elements-img">
 						<ul class="constructor-elements">
-							<li data-el="#roof" data-img="roof" data-pic=".swap-1">Крыша</li>
-							<li data-el="#wall" data-img="wall" data-pic=".swap-2">Стена</li>
-							<li data-el="#cap" data-img="cap" data-pic=".swap-3">Цоколь</li>
-							<li data-el="#fas-el" data-img="fas" data-pic=".swap-4">Фасонные эелементы</li>
-							<li data-el="#goal" data-img="goal" data-pic=".swap-5">Гаражные ворота</li>
+							<li data-el="#roof" data-img="roof" data-pic=".swap-1" data-house="i/roof.png"><div></div><span>Крыша</span></li>
+							<li data-el="#wall" data-img="wall" data-pic=".swap-2" data-house="i/wall.png"><div></div><span>Стена</span></li>
+							<li data-el="#cap" data-img="cap" data-pic=".swap-3" data-house="i/cap.png"><div></div><span>Цоколь</span></li>
+							<li data-el="#fas-el" data-img="fas" data-pic=".swap-4" data-house="i/fas-el.png"><div></div><span>Фасонные элементы</span></li>
+							<li data-el="#goal" data-img="goal" data-pic=".swap-5" data-house="i/garage.png"><div></div><span>Гаражные ворота</span></li>
 						</ul>
 					</div>
 					<div class="constructor-item" id="roof">
@@ -139,6 +144,28 @@
 					<!--<a href="#" class="constructor-btn">Отправить визуализацию на расчёт</a>-->
 				</div>
 				<!--<a href="#" class="constructor-btn">Отправить визуализацию на расчёт</a>-->
+			</div>
+		</div>
+	</div>
+
+	<div class="b constructor-instruction">
+		<div class="container">
+			<h2 class="instruction-title">Как работает конструктор</h2>
+			<div class="wrap">
+				<div class="instruction-text">
+					<p>На готовом макете дома вы можете самостоятельно, онлайн, выбрать цветовое решение, для своего дома.</p>
+					<p>Для этого необходимо выполнить два простых шага:<br>1) Выберите ту часть здания, где хотите изменить цвет: крыша, стена, цоколь, декоративные элементы;<br>2) В выбранном варианте откроются доступные варианты цветов. Вам необходимо нажать на цвет, после чего выбранная вами часть дома изменит цвет на картинке;<br>3) Готовый вариант дома в выбранном вами цветовом варианте вы можете отправить на расчёт стоимости, нажав на кнопку "Отправить визуализацию на расчёт". Наш специалист свяжется с вами и сообщит ориентировочную стоимость под необходимые объёмы дома.</p>
+				</div>
+				<div class="images">
+					<div class="image">
+						<img src="i/house.png" alt="">
+						<div class="number"><span>1</span></div>
+					</div>
+					<div class="image">
+						<img src="i/house.png" alt="">
+						<div class="number"><span>2</span></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

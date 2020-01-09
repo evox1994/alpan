@@ -1,3 +1,9 @@
+body.no-scroll {
+	overflow: hidden !important;
+	height: 100vh !important;
+	box-sizing: border-box;
+}
+
 .constructor-block {
 	padding: 50px 0;
 	font-family: "Open Sans", sans-serif;
@@ -9,17 +15,46 @@
 	justify-content: space-between;
 	align-items: flex-start;
 }
+.constructor-filter-btn, .constructor-left-btn {
+	display: none;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	color: #ffffff;
+	padding: 10px;
+	max-width: 240px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #89bd3e;
+	text-align: center;
+}
+.constructor-filter-btn {
+	margin: 0 auto 30px;
+}
 .constructor-left {
 	width: 100%;
 	max-width: 350px;
 	padding: 20px 0;
 	text-align: left;
+	background-color: #f9f9f9;
+}
+.constructor-left-buttons {
+	display: none;
+	background-color: #f9f9f9;
+	padding: 10px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	box-sizing: border-box;
 }
 .constructor-left-title {
 	display: block;
 	font-size: 22px;
 	line-height: 1.2;
 	font-weight: 700;
+	margin: 0 10px;
+	color: #000000;
 }
 .constructor-item {
 	display: none;
@@ -34,14 +69,21 @@
 }
 .item-wrap-title {
 	display: block;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.2;
+	font-weight: 700;
+	color: #000000;
 	margin-bottom: 15px;
 }
-.constructor-elements li {
+/*.constructor-elements li {
 	cursor: pointer;
+}*/
+.elements-img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto 10px;
 }
-.constructor-texture li {
+.constructor-elements li, .constructor-texture li {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -50,49 +92,51 @@
 	cursor: pointer;
 	margin-bottom: 10px;
 }
-.constructor-texture li:last-child {
+.constructor-elements li:last-child, .constructor-texture li:last-child {
 	margin-bottom: 0;
 }
-.constructor-texture li div {
+.constructor-elements li div, .constructor-texture li div {
 	display: block;
-	width: 30px;
-	height: 30px;
+	width: 24px;
+	height: 24px;
 	border: 1px solid #cccccc;
 	position: relative;
 	box-sizing: border-box;
 }
-.constructor-texture li.active div:before {
+.constructor-elements li.active div:before, .constructor-texture li.active div:before {
 	content: '';
 	display: block;
-	width: 10px;
+	width: 8px;
 	height: 2px;
 	position: absolute;
-	left: 4px;
-	top: 15px;
+	left: 2px;
+	top: 12px;
 	background-color: #cccccc;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
-.constructor-texture li.active div:after {
+.constructor-elements li.active div:after, .constructor-texture li.active div:after {
 	content: '';
 	display: block;
-	width: 17px;
+	width: 15px;
 	height: 2px;
 	position: absolute;
-	left: 9px;
-	top: 13px;
+	left: 6px;
+	top: 10px;
 	background-color: #cccccc;
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
-.constructor-texture li span {
+.constructor-elements li span, .constructor-texture li span {
 	display: block;
-	width: calc(100% - 40px);
-	margin-top: 5px;
+	width: calc(100% - 34px);
+	margin-top: 2px;
+	font-size: 14px;
+	color: #000000;
 }
 .constructor-colors {
 	display: -webkit-flex;
@@ -148,7 +192,6 @@
 }
 .constructor-image {
 	position: relative;
-	margin-bottom: 30px;
 }
 .constructor-image img {
 	display: block;
@@ -181,4 +224,161 @@
 }
 .constructor-right .constructor-btn {
 	display: block;
+}
+
+.constructor-instruction {
+	padding: 50px 0;
+	background-color: #f3f3f3;
+	font-family: "Open Sans", sans-serif;
+	text-align: left;
+}
+.constructor-instruction .instruction-title {
+	display: block;
+	margin-bottom: 40px;
+	font-size: 30px;
+	color: #000000;
+	font-weight: 700;
+}
+.constructor-instruction .wrap {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.constructor-instruction .instruction-text {
+	width: calc(50% - 15px);
+	text-align: left;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #000000;
+}
+.constructor-instruction .instruction-text p {
+	display: block;
+	margin-bottom: 20px;
+}
+.constructor-instruction .instruction-text p:last-child {
+	margin-bottom: 0;
+}
+.constructor-instruction .wrap .images {
+	width: calc(50% - 15px);
+}
+.constructor-instruction .wrap .images .image {
+	position: relative;
+	margin-bottom: 20px;
+}
+.constructor-instruction .wrap .images .image:last-child {
+	margin-bottom: 0;
+}
+.constructor-instruction .wrap .images .image img {
+	display: block;
+	max-width: 100%;
+	margin-left: auto;
+}
+.constructor-instruction .wrap .images .image .number {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #cccccc;
+}
+.constructor-instruction .wrap .images .image .number span {
+	display: block;
+	font-weight: 700;
+	color: #000000;
+	font-size: 16px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+
+
+
+@media screen and (max-width: 920px){
+	.constructor-left {
+		max-width: 280px;
+	}
+	.constructor-right {
+		width: calc(100% - 300px);
+	}
+}
+@media screen and (max-width: 768px){
+	.constructor-block {
+		padding: 30px 0;
+	}
+	.constructor {
+		display: block;
+	}
+	.constructor-right {
+		width: 100%;
+	}
+	.constructor-filter-btn, .constructor-left-btn {
+		display: block;
+	}
+	.constructor-left {
+		position: fixed;
+		max-width: none;
+		padding: 60px 0;
+		z-index: 150;
+		top: -200%;
+		left: 0;
+		height: 100vh;
+		overflow-x: hidden;
+		overflow-y: auto;
+		box-sizing: border-box;
+	}
+	.constructor-left.active {
+		top: 0;
+	}
+	.constructor-left.active .constructor-left-buttons {
+		display: block;
+	}
+	.constructor-left-title {
+		font-size: 18px;
+		text-align: center;
+	}
+	.item-wrap-title {
+		font-size: 14px;
+		text-align: center;
+	}
+	.elements-img {
+		max-height: 300px;
+	}
+	.constructor-elements li span, .constructor-texture li span {
+		font-size: 12px;
+		margin-top: 4px;
+	}
+
+	.constructor-instruction {
+		padding: 30px 0;
+		text-align: center;
+	}
+	.constructor-instruction .instruction-title {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.constructor-instruction .wrap {
+		display: block;
+	}
+	.constructor-instruction .instruction-text {
+		width: 100%;
+		margin-bottom: 20px;
+		font-size: 14px;
+	}
+	.constructor-instruction .instruction-text p {
+		margin-bottom: 16px;
+	}
+	.constructor-instruction .wrap .images {
+		width: 100%;
+		margin: 0 auto;
+		max-width: 500px;
+	}
 }

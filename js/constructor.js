@@ -40,10 +40,12 @@ $(document).ready(function(){
 
 	$(document).on('click','.constructor-elements li',function(){
 		var el = $(this).attr('data-el');
+		var src = $(this).attr('data-house');
 		$('.constructor-item').removeClass('active');
 		$(this).parents('.constructor-elements').find('li').removeClass('active');
 		$(el).addClass('active');
 		$(this).addClass('active');
+		$('.elements-img').attr('src',src);
 		Constructor();
 	});
 
@@ -65,6 +67,19 @@ $(document).ready(function(){
 			$(this).addClass('active');
 			Constructor();
 		}
+	});
+
+	$(document).on('click','.constructor-filter-btn',function(){
+		$('.constructor-left').addClass('active');
+		$('body').addClass('no-scroll');
+	});
+
+	$(document).on('click','.constructor-left-btn',function(){
+		$('.constructor-left').removeClass('active');
+		$('body').removeClass('no-scroll');
+		setTimeout(function(){
+			$('body,html').animate({scrollTop: $('.constructor').offset().top - 30},500);
+		},300);
 	});
 
 });

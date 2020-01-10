@@ -97,13 +97,24 @@ body.no-scroll {
 }
 .constructor-elements li div, .constructor-texture li div {
 	display: block;
-	width: 24px;
-	height: 24px;
+	width: 20px;
+	height: 20px;
 	border: 1px solid #cccccc;
 	position: relative;
 	box-sizing: border-box;
 }
 .constructor-elements li.active div:before, .constructor-texture li.active div:before {
+	content: '';
+	display: block;
+	width: 60%;
+	height: 60%;
+	border-radius: 50%;
+	background-color: #89bd3e;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+}
+/*.constructor-elements li.active div:before, .constructor-texture li.active div:before {
 	content: '';
 	display: block;
 	width: 8px;
@@ -130,11 +141,11 @@ body.no-scroll {
 	-moz-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-}
+}*/
 .constructor-elements li span, .constructor-texture li span {
 	display: block;
-	width: calc(100% - 34px);
-	margin-top: 2px;
+	width: calc(100% - 30px);
+	margin-top: 0;
 	font-size: 14px;
 	color: #000000;
 }
@@ -164,10 +175,33 @@ body.no-scroll {
 	cursor: pointer;
 	position: relative;
 	border-radius: 7px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	box-sizing: border-box;
 }
-.constructor-colors li:before {
+.constructor-colors li:after {
+	content: attr(data-title);
+	display: none;
+	padding: 3px 5px;
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 10px;
+	position: absolute;
+	top: calc(100% + 5px);
+	left: 50%;
+	box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+	white-space: nowrap;
+}
+.constructor-colors li:hover:after {
+	display: block;
+}
+.constructor-colors li div {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 7px;
+}
+.constructor-colors li div:before {
 	content: '';
 	display: block;
 	width: 100%;
@@ -184,7 +218,7 @@ body.no-scroll {
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
 }
-.constructor-colors li.active:before {
+.constructor-colors li.active div:before {
 	top: 0px;
 }
 .constructor-right {
@@ -354,7 +388,7 @@ body.no-scroll {
 	}
 	.constructor-elements li span, .constructor-texture li span {
 		font-size: 12px;
-		margin-top: 4px;
+		margin-top: 1px;
 	}
 
 	.constructor-instruction {

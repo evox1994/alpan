@@ -27,26 +27,39 @@
 	<div class="b constructor-block">
 		<div class="container">
 			<div class="constructor">
-				<div class="constructor-filter-btn">Фильтры</div>
-				<div class="constructor-left">
-					<div class="constructor-left-buttons">
-						<div class="constructor-left-btn">Показать результат</div>
+				<div class="constructor-right">
+					<div class="constructor-image">
+						<img src="i/const-base.jpg" alt="">
+						<img src="" alt="" class="swap-img swap-1">
+						<img src="" alt="" class="swap-img swap-2">
+						<img src="" alt="" class="swap-img swap-3">
+						<img src="" alt="" class="swap-img swap-4">
+						<img src="" alt="" class="swap-img swap-5">
 					</div>
+				</div>
+				<!--<div class="constructor-filter-btn">Фильтры</div>-->
+				<div class="constructor-left">
+					<!--<div class="constructor-left-buttons">
+						<div class="constructor-left-btn">Показать результат</div>
+					</div>-->
 					<div class="constructor-left-title">Фильтры</div>
 					<div class="item-wrap">
 						<div class="item-wrap-title">Выберите элемент дома</div>
 						<img src="i/house.png" alt="" class="elements-img">
-						<ul class="constructor-elements">
-							<li data-el="#roof" data-img="roof" data-pic=".swap-1" data-house="i/roof.png"><div></div><span>Крыша</span></li>
-							<li data-el="#wall" data-img="wall" data-pic=".swap-2" data-house="i/wall.png"><div></div><span>Стена</span></li>
-							<li data-el="#cap" data-img="cap" data-pic=".swap-3" data-house="i/cap.png"><div></div><span>Цоколь</span></li>
-							<li data-el="#fas-el" data-img="fas" data-pic=".swap-4" data-house="i/fas-el.png"><div></div><span>Фасонные элементы</span></li>
-							<li data-el="#goal" data-img="goal" data-pic=".swap-5" data-house="i/garage.png"><div></div><span>Гаражные ворота</span></li>
-						</ul>
+						<div class="constructor-elements-wrap">
+							<div class="constructor-elements-text"><span>Выберите элемент дома</span></div>
+							<ul class="constructor-elements">
+								<li data-el="#roof" data-img="roof" data-pic=".swap-1" data-house="i/roof.png"><div></div><span>Крыша</span></li>
+								<li data-el="#wall" data-img="wall" data-pic=".swap-2" data-house="i/wall.png"><div></div><span>Стена</span></li>
+								<li data-el="#cap" data-img="cap" data-pic=".swap-3" data-house="i/cap.png"><div></div><span>Цоколь</span></li>
+								<li data-el="#fas-el" data-img="fas" data-pic=".swap-4" data-house="i/fas-el.png"><div></div><span>Фасонные элементы</span></li>
+								<li data-el="#goal" data-img="goal" data-pic=".swap-5" data-house="i/garage.png"><div></div><span>Гаражные ворота</span></li>
+							</ul>
+						</div>
 					</div>
 					<div class="constructor-item" id="roof">
 						<div class="item-wrap">
-							<div class="item-wrap-title">Цвета:</div>
+							<div class="item-wrap-title for-color">Цвета:</div>
 							<ul class="constructor-colors">
 								<li class="active" data-img="darkgray" data-title="AP 101" style="background-color:#222328;border-color:#222328;"><div></div></li>
 								<li data-img="pimp" data-title="AP 102" style="background-color:#f91155;border-color:#f91155;"><div></div></li>
@@ -56,15 +69,18 @@
 					<div class="constructor-item" id="wall">
 						<div class="item-wrap">
 							<div class="item-wrap-title">Текстура:</div>
-							<ul class="constructor-texture">
-								<li data-img="tsht" data-texture=".texture-1"><div></div><span>"Тонкая" штукатурка</span></li>
-								<li data-img="zsht" data-texture=".texture-2"><div></div><span>"Зернистая" штукатурка</span></li>
-								<li class="active" data-img="dsht" data-texture=".texture-3"><div></div><span>Декоративная штукатурка</span></li>
-								<li data-img="tree" data-texture=".texture-4"><div></div><span>Дерево</span></li>
-							</ul>
+							<div class="constructor-texture-wrap">
+								<div class="constructor-texture-text"><span>Декоративная штукатурка</span></div>
+								<ul class="constructor-texture">
+									<li data-img="tsht" data-texture=".texture-1"><div></div><span>"Тонкая" штукатурка</span></li>
+									<li data-img="zsht" data-texture=".texture-2"><div></div><span>"Зернистая" штукатурка</span></li>
+									<li class="active" data-img="dsht" data-texture=".texture-3"><div></div><span>Декоративная штукатурка</span></li>
+									<li data-img="tree" data-texture=".texture-4"><div></div><span>Дерево</span></li>
+								</ul>
+							</div>
 						</div>
 						<div class="item-wrap">
-							<div class="item-wrap-title">Цвета:</div>
+							<div class="item-wrap-title for-color">Цвета:</div>
 							<ul class="constructor-colors texture-colors texture-1">
 								<li class="active" data-img="white" data-title="AP 103" style="background-color:#cfcfb5;border-color:#cfcfb5;"><div></div></li>
 								<li data-img="yellow" data-title="AP 104" style="background-color:#f9f612;border-color:#f9f612;"><div></div></li>
@@ -86,15 +102,18 @@
 					<div class="constructor-item" id="cap">
 						<div class="item-wrap">
 							<div class="item-wrap-title">Текстура:</div>
-							<ul class="constructor-texture">
-								<li data-img="tsht" data-texture=".texture-1"><div></div><span>"Тонкая" штукатурка</span></li>
-								<li class="active" data-img="zsht" data-texture=".texture-2"><div></div><span>"Зернистая" штукатурка</span></li>
-								<li data-img="dsht" data-texture=".texture-3"><div></div><span>Декоративная штукатурка</span></li>
-								<li data-img="tree" data-texture=".texture-4"><div></div><span>Дерево</span></li>
-							</ul>
+							<div class="constructor-texture-wrap">
+								<div class="constructor-texture-text"><span>"Зернистая" штукатурка</span></div>
+								<ul class="constructor-texture">
+									<li data-img="tsht" data-texture=".texture-1"><div></div><span>"Тонкая" штукатурка</span></li>
+									<li class="active" data-img="zsht" data-texture=".texture-2"><div></div><span>"Зернистая" штукатурка</span></li>
+									<li data-img="dsht" data-texture=".texture-3"><div></div><span>Декоративная штукатурка</span></li>
+									<li data-img="tree" data-texture=".texture-4"><div></div><span>Дерево</span></li>
+								</ul>
+							</div>
 						</div>
 						<div class="item-wrap">
-							<div class="item-wrap-title">Цвета:</div>
+							<div class="item-wrap-title for-color">Цвета:</div>
 							<ul class="constructor-colors texture-colors texture-1">
 								<li class="active" data-img="brown" data-title="AP 111" style="background-color:#130d0d;border-color:#130d0d;"><div></div></li>
 								<li data-img="blue" data-title="AP 112" style="background-color:#19d7fc;border-color:#19d7fc;"><div></div></li>
@@ -115,7 +134,7 @@
 					</div>
 					<div class="constructor-item" id="fas-el">
 						<div class="item-wrap">
-							<div class="item-wrap-title">Цвета:</div>
+							<div class="item-wrap-title for-color">Цвета:</div>
 							<ul class="constructor-colors">
 								<li class="active" data-img="brown" data-title="AP 119" style="background-color:#2b3537;border-color:#2b3537;"><div></div></li>
 								<li data-img="blue" data-title="AP 120" style="background-color:#19d7fc;border-color:#19d7fc;"><div></div></li>
@@ -124,7 +143,7 @@
 					</div>
 					<div class="constructor-item" id="goal">
 						<div class="item-wrap">
-							<div class="item-wrap-title">Цвета:</div>
+							<div class="item-wrap-title for-color">Цвета:</div>
 							<ul class="constructor-colors">
 								<li class="active" data-img="brown" data-title="AP 121" style="background-color:#584942;border-color:#584942;"><div></div></li>
 								<li data-img="pimp" data-title="AP 122" style="background-color:#f91155;border-color:#f91155;"><div></div></li>
@@ -132,18 +151,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="constructor-right">
-					<div class="constructor-image">
-						<img src="i/const-base.jpg" alt="">
-						<img src="" alt="" class="swap-img swap-1">
-						<img src="" alt="" class="swap-img swap-2">
-						<img src="" alt="" class="swap-img swap-3">
-						<img src="" alt="" class="swap-img swap-4">
-						<img src="" alt="" class="swap-img swap-5">
-					</div>
-					<!--<a href="#" class="constructor-btn">Отправить визуализацию на расчёт</a>-->
-				</div>
-				<!--<a href="#" class="constructor-btn">Отправить визуализацию на расчёт</a>-->
 			</div>
 		</div>
 	</div>

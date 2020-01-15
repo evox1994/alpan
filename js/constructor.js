@@ -38,6 +38,11 @@ $(document).ready(function(){
 	}
 	Constructor();
 
+	setTimeout(function(){
+		$('.constructor-image-load').removeClass('active');
+		$('.constructor-image').removeClass('active');
+	},5000);
+
 	$(document).on('click','.constructor-elements-text',function(){
 		$(this).parents('.constructor-elements-wrap').toggleClass('active');
 	});

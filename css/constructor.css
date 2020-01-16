@@ -441,14 +441,15 @@ body.no-scroll {
 		border: 0;
 	}
 	.item-wrap-title {
-		display: none;
+		display: block;
 		font-size: 14px;
 		text-align: center;
+		margin-bottom: 10px;
 	}
-	.item-wrap-title.for-color {
+	/*.item-wrap-title.for-color {
 		display: block;
 		margin-bottom: 5px;
-	}
+	}*/
 	.elements-img {
 		display: none;
 		max-height: 300px;

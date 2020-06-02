@@ -96,10 +96,10 @@ body.no-scroll {
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
 }
-.b-header-bot .b-nav > li:hover {
+/*.b-header-bot .b-nav > li:hover {
 	background-color: #88bc40;
 }
-/*.b-header-bot .b-nav > li:first-child {
+.b-header-bot .b-nav > li:first-child {
 	padding-left: 0;
 }
 .b-header-bot .b-nav > li:last-child {
@@ -164,6 +164,10 @@ body.no-scroll {
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
+}
+.b-header-bot .b-nav > li a:hover,
+.b-header-bot .b-nav > li:hover span {
+	color: #88bc40;
 }
 .b-header-btn {
 	display: -webkit-flex;
